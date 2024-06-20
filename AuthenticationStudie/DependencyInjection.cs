@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using AuthenticationStudie.Controllers.Service;
+using Microsoft.Extensions.Options;
 
 namespace AuthenticationStudie
 {
@@ -6,6 +7,8 @@ namespace AuthenticationStudie
     {
         public static IServiceCollection AddInfrastructureApi(this IServiceCollection services, IConfiguration configuration)
         {
+
+            services.AddSingleton<IOurHeroService, OurHeroService>();
 
             //services.AddMemoryCache();
             //
