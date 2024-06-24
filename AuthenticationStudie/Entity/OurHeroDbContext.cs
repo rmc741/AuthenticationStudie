@@ -9,7 +9,7 @@ namespace AuthenticationStudie.Entity
         {
         }
 
-        DbSet<OurHero> OurHeros { get; set; }
+        public DbSet<OurHero> OurHeros { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
